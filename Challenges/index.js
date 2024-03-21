@@ -21,8 +21,8 @@ console.log(total);
 
 let Arr = [34, 3, 12, 45, 76, 19, 4];
 
-for (i = 0; i < Arr.length; i++) {
-  for (j = 0; j < Arr.length; j++) {
+for (let i = 0; i < Arr.length; i++) {
+  for (let j = 0; j < Arr.length - i - 1; j++) {
     if (Arr[j] > Arr[j + 1]) {
       let temp = Arr[j];
       Arr[j] = Arr[j + 1];
@@ -30,7 +30,9 @@ for (i = 0; i < Arr.length; i++) {
     }
   }
 }
+
 console.log(Arr);
+
 
 
 //Q no. -: 3.. Reversing input of a string using For loop in decrement
